@@ -113,9 +113,9 @@ class Template {
 							</a>
 						</li>
 						<li class="nav-item">
-						<a href="'.site_url('ui_modals').'" class="nav-link '.$activeModals.'">
-							<i class="far fa-circle nav-icon"></i> <p>Modals & Alerts</p>
-						</a>
+							<a href="'.site_url('ui_modals').'" class="nav-link '.$activeModals.'">
+								<i class="far fa-circle nav-icon"></i> <p>Modals & Alerts</p>
+							</a>
 						</li>
 						<li class="nav-item">
 							<a href="'.site_url('ui_navbar').'" class="nav-link '.$activeNavbar.'">
