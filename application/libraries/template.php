@@ -18,6 +18,7 @@ class Template {
 		$this->template_data['menu_charts'] = $this->MenuCharts($view_data);
 		$this->template_data['menu_about'] = $this->MenuAbout($view_data);
 		$this->template_data['menu_ui'] = $this->MenuUI($view_data);
+		$this->template_data['menu_forms'] = $this->MenuForms($view_data);
 		$this->set($name , $this->CI->load->view($view, $view_data, TRUE));
 		$this->CI->load->view($template, $this->template_data);
 	}
@@ -129,6 +130,26 @@ class Template {
 						<li class="nav-item">
 							<a href="'.site_url('ui_ribbons').'" class="nav-link '.$activeRibbons.'">
 								<i class="far fa-circle nav-icon"></i> <p>Ribbons</p>
+							</a>
+						</li>
+					</ul>
+				</li>';
+	}
+
+	function MenuForms($data) {
+		$menuOpen = (@$data['menu_forms']) ? $data['menu_forms'] : '';
+		$activeParent = (@$data['parent_forms']) ? $data['parent_forms'] : '';
+		$activeGeneral = (@$data['active_general']) ? $data['active_general'] : '';
+
+		return '<li class="nav-item '.$menuOpen.'">
+					<a href="#" class="nav-link '.$activeParent.'">
+						<i class="nav-icon fas fa-tree"></i>
+						<p>Forms <i class="fas fa-angle-left right"></i></p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="'.site_url('forms_general').'" class="nav-link '.$activeGeneral.'">
+								<i class="far fa-circle nav-icon"></i> <p>General Elements</p>
 							</a>
 						</li>
 					</ul>

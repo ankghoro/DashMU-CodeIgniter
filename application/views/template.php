@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>AdminLTE 3 | <?php echo @$title; ?></title>
+		<title>DashMU CodeIgniter | <?php echo @$title; ?></title>
 		<link rel="icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/images/favicon.ico">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -148,7 +148,7 @@
 			<aside class="main-sidebar sidebar-dark-primary elevation-4">
 				<!-- Brand Logo -->
 				<a href="<?php echo base_url(); ?>" class="brand-link">
-					<img src="<?php echo base_url(); ?>assets/images/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+					<img src="<?php echo base_url(); ?>assets/images/sneakers-color.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
 					<span class="brand-text font-weight-light">AdminLTE</span>
 				</a>
 
@@ -171,6 +171,7 @@
 							echo $menu_dashboard;
 							echo $menu_charts;
 							echo $menu_ui;
+							echo $menu_forms;
 							echo $menu_about;
 							?>
 						</ul>
